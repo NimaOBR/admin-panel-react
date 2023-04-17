@@ -1,0 +1,102 @@
+.SideBar {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 4rem;
+  transition: all 300ms ease;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 4%;
+  font-size: 22px;
+  font-weight: bold;
+}
+.logo > img {
+  width: 3rem;
+  height: 3rem;
+}
+.logo > span > span {
+  color: var(--pink);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1.6rem;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: fit-content;
+  position: relative;
+  transition: all 300ms ease;
+}
+.menuItem:hover {
+  cursor: pointer;
+}
+.active {
+  background-color: var(--activeItem);
+  margin-left: 0.5rem;
+  padding-right: 12px;
+  border-radius: 8px;
+}
+.active::before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background-color: var(--pink);
+  margin-right: calc(0.5rem - 8px);
+}
+.signOut:hover {
+  color: var(--pink);
+}
+.bars {
+  position: fixed;
+  top: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ffe0e0;
+  z-index: 10;
+  display: none !important;
+  transition: all .22s linear;
+}
+
+@media screen and (max-width: 1278px) {
+  .menuItem > span,
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bars {
+    display: block !important;
+  }
+  .SideBar {
+    position: fixed;
+    z-index: 9;
+    background-color: #ffe0e0;
+    width: 35%;
+    height: 100%;
+    padding-right: 1rem;
+  }
+  .menuItem > span,
+  .logo {
+    display: block;
+  }
+  .logo {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-left: 45px;
+  }
+}

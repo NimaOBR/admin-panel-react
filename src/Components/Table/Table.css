@@ -1,0 +1,24 @@
+.Table th,
+td {
+  border: none !important;
+}
+
+.MuiTableRow-root > * {
+  padding: 20px !important;
+}
+.MuiTableRow-root.MuiTableRow-head > * {
+  font-weight: bold !important;
+}
+@media screen and (max-width: 1278px) {
+  .Table {
+    width: 200%;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Table {
+    width: 80%;
+    margin: 20px auto 0 auto;
+  }
+}

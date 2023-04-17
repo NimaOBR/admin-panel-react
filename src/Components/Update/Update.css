@@ -1,0 +1,32 @@
+.Updates {
+  width: 85%;
+  background: #fff;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.update {
+  display: flex;
+  gap: 0.7rem;
+}
+.update img {
+  min-width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+}
+.note > div > span:nth-last-of-type(2) {
+    font-weight: bold;
+}
+.time{
+    font-weight: bold;
+    color: var(--black);
+}
+.clock{
+    transform: scale(.66);
+    margin-bottom: -6px;
+    color: red;
+}

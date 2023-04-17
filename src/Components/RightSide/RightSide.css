@@ -1,0 +1,19 @@
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 95%;
+}
+
+@media screen and (max-width: 1278px) {
+    .rightSide{
+        height: fit-content;
+        margin-top: 65px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .rightSide{
+        width: 90%;
+        margin: auto;
+    }
+}

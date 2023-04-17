@@ -1,0 +1,124 @@
+.Cards {
+  display: flex;
+  gap: 10px;
+  margin-top: -40px;
+}
+
+.CardContainer {
+  width: 100%;
+}
+
+/* Card */
+
+.CompactCard {
+  display: flex;
+  flex: 1;
+  border-radius: 0.7rem;
+  height: 7rem;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  padding: 2rem;
+}
+.CompactCard:hover {
+  box-shadow: none !important;
+}
+
+.radiaBar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.CircularProgressbar {
+  width: 5rem !important;
+  overflow: visible;
+}
+.CircularProgressbar-path {
+  stroke: #fff !important;
+  stroke-width: 12px !important;
+  filter: drop-shadow(2px 4px 6px #fff);
+}
+.CircularProgressbar-trail {
+  display: none;
+}
+.CircularProgressbar-text {
+  fill: #fff !important;
+}
+.radiaBar > span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.details > span:nth-child(2) {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.details > span:nth-child(3) {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* ExpandedCard */
+
+.ExpandedCard {
+  position: absolute;
+  width: 60%;
+  height: 70vh;
+  z-index: 9;
+  left: 13rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.3) !important;
+}
+.ExpandedCard span:nth-last-of-type(2) {
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 0 2px 10px #fff;
+}
+.ExpandedCard span:nth-last-of-type(1) {
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+}
+.ChartContainer {
+  width: 70%;
+}
+
+@media screen and (max-width: 1278px) {
+  .CardContainer {
+   height: 9rem;
+    margin-top: 2rem;
+    margin-bottom: 35px;
+ 
+  }
+  .Cards{
+    flex-direction: column;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Cards{
+    width: 90%;
+  }
+  .ExpandedCard{
+    top: 8rem;
+    height: 60%;
+    left: 4rem;
+    width: 500px;
+  }
+  .ChartContainer{
+    width: 100%;
+  }
+}
